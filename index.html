@@ -10,93 +10,119 @@
 
   <header>
     <h1>Deepa Subramani</h1>
-    <p class="typing">Data Analyst | Web Analytics | Front-end Developer</p>
+    <p class="typing">Data Analyst | Software Developer | Problem Solver</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
+    <button id="toggle-theme">🌙 Dark Mode</button>
   </nav>
 
+  <!-- ABOUT -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Data-driven and results-oriented analyst with 5+ years of experience in digital operations, web analytics, stakeholder management, and front-end development. Skilled in designing A/B tests, presenting insights, and driving data-informed decisions. Strong attention to detail and cross-functional collaboration.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="card"><h3>Languages & Frameworks</h3><p>React.js, HTML5, CSS3, Sass, SQL, MySQL, jQuery, Bootstrap</p></div>
-      <div class="card"><h3>Data Tools</h3><p>Excel, Google Sheets, Tableau, BigQuery</p></div>
-      <div class="card"><h3>Version Control & Tools</h3><p>Git, GitHub, VS Code, Chrome DevTools</p></div>
-      <div class="card"><h3>Practices</h3><p>Responsive Design, WCAG Accessibility, Agile (Scrum), API Integration</p></div>
+    <div class="about-container">
+      <img src="about.jpg" alt="Data Analyst illustration">
+      <p>Hello 👋 I’m <b>Deepa</b>, a passionate <b>Data Analyst</b> and <b>Software Developer</b> with over 5 years of experience turning raw data into actionable insights and building clean, responsive web applications.  
+      My mission is to help businesses make smarter, data-driven decisions while crafting user-friendly digital solutions.</p>
     </div>
   </section>
 
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Core Skills</h2>
+    <div class="skills">
+      <div class="card"><h3>Data Analytics</h3><p>SQL, BigQuery, Tableau, Google Analytics, A/B Testing</p></div>
+      <div class="card"><h3>Web Development</h3><p>React.js, HTML5, CSS3, JavaScript, Sass, Bootstrap</p></div>
+      <div class="card"><h3>Programming</h3><p>Python, R (for data analysis), REST API Integration</p></div>
+      <div class="card"><h3>Collaboration</h3><p>Agile/Scrum, GitHub, Version Control, Stakeholder Communication</p></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
   <section id="experience">
-    <h2>Experience</h2>
+    <h2>Professional Journey</h2>
     <div class="experience">
       <div class="card">
         <h3>Marketing & Web Analytics Analyst</h3>
-        <p><b>Family Choice Fuel Wales Ltd</b> | Jan 2022 – Present | Luton, UK</p>
+        <p><b>Family Choice Fuel Wales Ltd</b> | 2022 – Present</p>
         <ul>
-          <li>Executed A/B tests improving conversion rates.</li>
-          <li>Analyzed trends with Google Analytics & Data Studio.</li>
-          <li>Delivered actionable UX improvements & dashboards.</li>
+          <li>Designed and executed experiments that boosted conversion by 20%.</li>
+          <li>Built dashboards that simplified decision-making for senior leadership.</li>
+          <li>Collaborated with UX teams to transform research into improved journeys.</li>
         </ul>
       </div>
       <div class="card">
         <h3>Software Engineer</h3>
-        <p><b>Qantler Technologies</b> | May 2019 – Sep 2021 | Chennai, India</p>
+        <p><b>Qantler Technologies</b> | 2019 – 2021</p>
         <ul>
-          <li>Built dynamic UI with React.js & Bootstrap.</li>
-          <li>Integrated REST APIs & optimized performance.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Junior Web Developer (Intern)</h3>
-        <p><b>Qantler Technologies</b> | Jan 2019 – Apr 2019</p>
-        <ul>
-          <li>Developed web pages with HTML, CSS, and JavaScript.</li>
+          <li>Developed scalable React.js applications with API integrations.</li>
+          <li>Optimized systems, cutting page load time by 25%.</li>
+          <li>Contributed to Agile sprints and collaborative code reviews.</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <div class="card">
-      <p><b>MSc, Computer Science with Project Management</b><br>University of Bedfordshire, UK (2021 – 2023)</p>
-      <p><b>B.E, Electronics & Communications Engineering</b><br>Kongunadu College of Engineering, India (2015 – 2019)</p>
-    </div>
-  </section>
-
+  <!-- PROJECTS -->
   <section id="projects">
-    <h2>Projects</h2>
+    <h2>Highlighted Projects</h2>
     <div class="projects">
-      <div class="card"><h3>Responsive Travel Booking UI</h3><p>Built with HTML5, CSS3, JS using responsive design and hosted on GitHub Pages.</p></div>
-      <div class="card"><h3>Mobile Site Redesign</h3><p>Rebuilt mobile-first layout with Sass and animations using BEM methodology.</p></div>
+      <!-- Project 1 -->
+      <div class="card project-card" onclick="openModal('modal1')">
+        <img src="project1.jpg" alt="Booki UI">
+        <h3>Booki Travel Booking UI</h3>
+        <p>Responsive booking platform with modern UI and animations.</p>
+      </div>
+      <!-- Project 2 -->
+      <div class="card project-card" onclick="openModal('modal2')">
+        <img src="project2.jpg" alt="Mobile redesign">
+        <h3>Mobile Redesign</h3>
+        <p>Mobile-first redesign with Sass and smooth transitions.</p>
+      </div>
     </div>
   </section>
 
+  <!-- MODALS -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <img src="project1.jpg" alt="Booki Project">
+      <h2>Booki Travel Booking UI</h2>
+      <p>A responsive travel booking website built with HTML, CSS, and JavaScript. Designed with a mobile-first approach, integrated smooth animations, and hosted on Vercel.</p>
+      <a href="https://booki-deepasubramani.vercel.app/" target="_blank" class="btn">🔗 View Live</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <img src="project2.jpg" alt="Mobile redesign">
+      <h2>Mobile Redesign</h2>
+      <p>Complete overhaul of a mobile site using Sass and BEM methodology, with engaging transitions for an improved user experience.</p>
+      <a href="#" target="_blank" class="btn">🔗 Coming Soon</a>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
   <section id="contact">
-    <h2>Contact</h2>
+    <h2>Let’s Connect</h2>
     <p>Email: <a href="mailto:deepa.stp19@gmail.com">deepa.stp19@gmail.com</a></p>
     <p>Phone: <a href="tel:+447438477128">+44 7438477128</a></p>
     <p>
       <a href="https://github.com/Deepasubramani" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/deepa2512/" target="_blank">LinkedIn</a> | 
-      <a href="https://deepasubramani.github.io/DS-Portfolio/#home" target="_blank">Portfolio</a>
+      <a href="https://www.linkedin.com/in/deepa2512/" target="_blank">LinkedIn</a>
     </p>
   </section>
 
   <footer>
-    <p>© 2025 Deepa Subramani | Built with HTML & CSS</p>
+    <p>© 2025 Deepa Subramani | Built with passion & code 💻</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
