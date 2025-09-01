@@ -1,29 +1,20 @@
-# Deepa Subramani – Portfolio 🌐
-A personal portfolio website showcasing skills as a Data Analyst and Software Developer.
+# Deepa Subramani – Dark Gradient Portfolio
 
-## 🚀 Features
-- Responsive, modern design
-- Parallax header background
-- Light/Dark mode toggle
-- Project cards with popups
-- Smooth animations
+## Features
+- Dark theme with animated gradient shimmer background
+- Agency-style layout (Hero, Skills, Projects)
+- Project cards with hover glow
+- Netlify-ready Contact Form with custom Thank You popup
 
-## 🛠️ Tech Stack
-- HTML5, CSS3, JavaScript
-- Responsive design
-- GitHub Pages / Netlify ready
+## Tech Stack
+- HTML5
+- CSS3 (Flexbox, Grid, Animations)
+- JavaScript (form modal)
 
-## 📂 Structure
-- index.html
-- style.css
-- script.js
-- about.jpg
-- project1.jpg
-- project2.jpg
-- header.jpg
+## Run Locally
+1. Download files
+2. Open `index.html` in your browser
 
-## 💻 Run Locally
-Open `index.html` in browser.
-
-## 🌍 Deployment
-Drag & drop folder to Netlify, Vercel, or enable GitHub Pages.
+## Deploy
+- **Netlify** → Drag & drop the folder (form will work)
+- **GitHub Pages** → Works, but form won’t submit
