@@ -1,120 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deepa Subramani | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Deepa<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <header class="parallax">
-    <div class="overlay">
-      <h1>Deepa Subramani</h1>
-      <p class="typing">Data Analyst | Software Developer | Problem Solver</p>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Deepa Subramani</span></h1>
+      <p>Data Analyst | Software Developer | Problem Solver</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+    <div class="hero-img">
+      <img src="about.jpg" alt="Deepa Portfolio" />
     </div>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <button id="toggle-theme">🌙 Dark Mode</button>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="about-container">
-      <img src="about.jpg" alt="Data Analyst illustration">
-      <p>Hello 👋 I’m <b>Deepa</b>, a passionate <b>Data Analyst</b> and <b>Software Developer</b> with over 5 years of experience turning raw data into actionable insights and building clean, responsive web applications.  
-      My mission is to help businesses make smarter, data-driven decisions while crafting user-friendly digital solutions.</p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Core Skills</h2>
-    <div class="skills">
-      <div class="card"><h3>Data Analytics</h3><p>SQL, BigQuery, Tableau, Google Analytics, A/B Testing</p></div>
-      <div class="card"><h3>Web Development</h3><p>React.js, HTML5, CSS3, JavaScript, Sass, Bootstrap</p></div>
-      <div class="card"><h3>Programming</h3><p>Python, R (for data analysis), REST API Integration</p></div>
-      <div class="card"><h3>Collaboration</h3><p>Agile/Scrum, GitHub, Version Control, Stakeholder Communication</p></div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <h2>Professional Journey</h2>
-    <div class="experience">
-      <div class="card">
-        <h3>Marketing & Web Analytics Analyst</h3>
-        <p><b>Family Choice Fuel Wales Ltd</b> | 2022 – Present</p>
-        <ul>
-          <li>Designed and executed experiments that boosted conversion by 20%.</li>
-          <li>Built dashboards that simplified decision-making for senior leadership.</li>
-          <li>Collaborated with UX teams to transform research into improved journeys.</li>
-        </ul>
+  <!-- Services / Skills -->
+  <section id="skills" class="services">
+    <h2>What I Do</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>📊 Data Analytics</h3>
+        <p>Transforming raw data into actionable insights using SQL, Tableau, and Python.</p>
       </div>
-      <div class="card">
-        <h3>Software Engineer</h3>
-        <p><b>Qantler Technologies</b> | 2019 – 2021</p>
-        <ul>
-          <li>Developed scalable React.js applications with API integrations.</li>
-          <li>Optimized systems, cutting page load time by 25%.</li>
-          <li>Contributed to Agile sprints and collaborative code reviews.</li>
-        </ul>
+      <div class="service-card">
+        <h3>💻 Web Development</h3>
+        <p>Building responsive web apps with HTML, CSS, JavaScript, and React.js.</p>
+      </div>
+      <div class="service-card">
+        <h3>⚙️ Software Engineering</h3>
+        <p>Designing scalable solutions with APIs and modern frameworks.</p>
       </div>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>Highlighted Projects</h2>
-    <div class="projects">
-      <div class="card project-card" onclick="openModal('modal1')">
-        <img src="project1.jpg" alt="Booki UI">
-        <h3>Booki Travel Booking UI</h3>
-        <p>Responsive booking platform with modern UI and animations.</p>
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="project1.jpg" alt="Booki Travel UI" />
+        <h3>Booki Travel Booking</h3>
+        <p>A responsive travel booking UI hosted on Vercel.</p>
+        <a href="https://booki-deepasubramani.vercel.app/" target="_blank" class="btn">View Live</a>
       </div>
-      <div class="card project-card" onclick="openModal('modal2')">
-        <img src="project2.jpg" alt="Mobile redesign">
+      <div class="project-card">
+        <img src="project2.jpg" alt="Mobile Redesign" />
         <h3>Mobile Redesign</h3>
-        <p>Mobile-first redesign with Sass and smooth transitions.</p>
+        <p>Redesigned a mobile-first interface with smooth UI/UX transitions.</p>
+        <a href="#" target="_blank" class="btn">Coming Soon</a>
       </div>
     </div>
   </section>
 
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal1')">&times;</span>
-      <img src="project-booki.jpg" alt="Booki Project">
-      <h2>Booki Travel Booking UI</h2>
-      <p>A responsive travel booking website built with HTML, CSS, and JavaScript. Designed with a mobile-first approach, integrated smooth animations, and hosted on Vercel.</p>
-      <a href="https://booki-deepasubramani.vercel.app/" target="_blank" class="btn">🔗 View Live</a>
-    </div>
-  </div>
-
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal2')">&times;</span>
-      <img src="project-ohmyfood.jpg" alt="Mobile redesign">
-      <h2>Mobile Redesign</h2>
-      <p>Complete overhaul of a mobile site using Sass and BEM methodology, with engaging transitions for an improved user experience.</p>
-      <a href="#" target="_blank" class="btn">🔗 Coming Soon</a>
-    </div>
-  </div>
-
-  <section id="contact">
-    <h2>Let’s Connect</h2>
-    <p>Email: <a href="mailto:deepa.stp19@gmail.com">deepa.stp19@gmail.com</a></p>
-    <p>Phone: <a href="tel:+447438477128">+44 7438477128</a></p>
-    <p>
-      <a href="https://github.com/Deepasubramani" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/deepa2512/" target="_blank">LinkedIn</a>
-    </p>
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form name="contact" method="POST" data-netlify="true" onsubmit="showThankYou(event)">
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
   </section>
+
+  <!-- Thank You Modal -->
+  <div id="thankyou-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>✅ Thank You!</h2>
+      <p>Your message has been sent successfully. I’ll be in touch soon.</p>
+    </div>
+  </div>
 
   <footer>
-    <p>© 2025 Deepa Subramani | Built with passion & code 💻</p>
+    <p>© 2025 Deepa Subramani | All Rights Reserved</p>
   </footer>
 
   <script src="script.js"></script>
